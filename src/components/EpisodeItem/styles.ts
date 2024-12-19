@@ -32,7 +32,14 @@ export const EpisodeNumber = styled.Text`
   `};
 `;
 
-export const IconWrapper = styled.TouchableOpacity`
+export const IconWrapper = styled.TouchableOpacity.attrs({
+  hitSlop: {
+    top: 20,
+    right: 20,
+    left: 20,
+    bottom: 20,
+  },
+})`
   align-items: center;
   justify-content: center;
   margin-right: 10px;

@@ -30,7 +30,9 @@ export function CharactersList({
     return (
       <EmptyContainer>
         <EmptyImage source={Rick} />
-        <EmptyText>Morty, ninguém aqui! Onde estão eles?</EmptyText>
+        <EmptyText testID="empty-text">
+          Morty, ninguém aqui! Onde estão eles?
+        </EmptyText>
       </EmptyContainer>
     );
   };

@@ -37,14 +37,11 @@ export function CharacterCard({
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
   const navigateToDetails = (id: number) => {
-    // return (event: React.SyntheticEvent) => {
-    // event.persist();
     navigation.navigate("CharacterDetails", { characterId: id });
-    // };
   };
 
   return (
-    <Container onPress={() => navigateToDetails(id)}>
+    <Container onPress={() => navigateToDetails(id)} testID="character-card">
       <Character>
         <Avatar isAlive={isAlive} source={{ uri: avatarUrl }} />
         <InfoCharacter>
@@ -58,7 +55,10 @@ export function CharacterCard({
         </InfoCharacter>
       </Character>
 
-      <IconWrapper onPress={onFavoriteToggle}>
+      <IconWrapper
+        onPress={onFavoriteToggle}
+        testID="favorite-character-button"
+      >
         {isFavorite ? (
           <IconHeartFilled size={24} fill={theme.COLORS.DARK} />
         ) : (

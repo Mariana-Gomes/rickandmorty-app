@@ -3,16 +3,16 @@ import { FlatList } from "react-native";
 import { Filter } from "../Filter";
 import { ContainerFilters } from "./styles";
 
-type TabProps = {
-  activeTab: string;
-  setActiveTab: (tab: string) => void;
-};
-
 export enum Tabs {
   CHARACTERS = "Personagens",
   EPISODES = "Episódios",
   FAVORITES = "Favoritos",
 }
+
+export type TabProps = {
+  activeTab: string;
+  setActiveTab: (tab: string) => void;
+};
 
 export function Tab({ activeTab, setActiveTab }: TabProps) {
   const tabs = [Tabs.CHARACTERS, Tabs.EPISODES, Tabs.FAVORITES];

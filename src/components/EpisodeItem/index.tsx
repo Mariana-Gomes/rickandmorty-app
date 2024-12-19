@@ -30,7 +30,7 @@ export function EpisodeItem({
           {name}
         </Title>
       </ContainerInfo>
-      <IconWrapper onPress={onFavorite}>
+      <IconWrapper onPress={onFavorite} testID="favorite-episode-button">
         {isFavorite ? (
           <IconHeartFilled size={24} fill={theme.COLORS.DARK} />
         ) : (

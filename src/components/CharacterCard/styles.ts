@@ -61,4 +61,11 @@ export const Alive = styled.Text`
   `};
 `;
 
-export const IconWrapper = styled.TouchableOpacity``;
+export const IconWrapper = styled.TouchableOpacity.attrs({
+  hitSlop: {
+    top: 20,
+    right: 20,
+    left: 20,
+    bottom: 20,
+  },
+})``;

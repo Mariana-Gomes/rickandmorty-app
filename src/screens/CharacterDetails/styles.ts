@@ -75,4 +75,11 @@ export const FavoriteContainer = styled.View`
   top: 10px;
 `;
 
-export const IconWrapper = styled.TouchableOpacity``;
+export const IconWrapper = styled.TouchableOpacity.attrs({
+  hitSlop: {
+    top: 20,
+    right: 20,
+    left: 20,
+    bottom: 20,
+  },
+})``;

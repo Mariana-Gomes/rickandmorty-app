@@ -12,7 +12,7 @@ export function MainInfo({
   hideSeparator = false,
 }: MainInfoProps) {
   return (
-    <Container hideSeparator={hideSeparator}>
+    <Container hideSeparator={hideSeparator} testID="main-info-container">
       <Description>{description}</Description>
       <TitleContainer>
         <Title>{value}</Title>

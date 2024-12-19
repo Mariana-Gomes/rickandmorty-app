@@ -34,7 +34,9 @@ export function EpisodeList({
     return (
       <EmptyContainer>
         <EmptyImage source={Rick} />
-        <EmptyText>Morty, cadê os episódios? Isso não está certo!</EmptyText>
+        <EmptyText testID="empty-text">
+          Morty, cadê os episódios? Isso não está certo!
+        </EmptyText>
       </EmptyContainer>
     );
   };

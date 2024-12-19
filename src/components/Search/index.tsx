@@ -13,7 +13,7 @@ export function Search({ onSearch, ...rest }: SearchProps) {
   return (
     <Container>
       <IconSearch size={24} color={theme.COLORS.GRAY_700} />
-      <SearchInput {...rest} onChangeText={onSearch} autoFocus={true} />
+      <SearchInput {...rest} onChangeText={onSearch} />
     </Container>
   );
 }

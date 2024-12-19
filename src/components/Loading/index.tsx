@@ -3,8 +3,8 @@ import { Container, LoadIndicator } from "./styles";
 
 export function Loading() {
   return (
-    <Container>
-      <LoadIndicator />
+    <Container testID="loading-container">
+      <LoadIndicator testID="load-indicator" />
     </Container>
   );
 }
